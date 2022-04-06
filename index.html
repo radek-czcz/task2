@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Document object example</TITLE>
+ <link rel="stylesheet" type="text/css" href="styles.css">
+</HEAD>
+<body>
+   <div class="form">
+      <p>Personal Data</p>
+      <p>Enter your name: <input type="text" name="name" class="needed" size="32" maxlength="20"></p>
+      <p>Enter your surname: <input type="text" name="surname" class="needed" size="32" maxlength="30"/></p>
+      <p>your PESEL: <input type="text" name="pesel" id="peselNum" class="needed" pattern="\d{11}" maxlength="11" onchange="inputChanged(this)">
+         <span class="validationMessageHidden">!!! input should consist of 10 digits only. No letters allowed</span>
+      </p>
+      <p>Enter your date of birth: <input type="date" class="needed" disabled="true" name="Date of Birth"></p>
+      <input type="button" name="submitButton" value="Submit" onclick="submitClicked()">
+   </div><br>
+
+
+</body>
+<script src="functions.js"></script>
+
+</html>

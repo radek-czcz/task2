@@ -1,0 +1,11 @@
+input:invalid {
+    border-color: #DD2C00;
+}
+
+.validationMessageShown {
+   visibility: visible
+}
+
+.validationMessageHidden {
+   visibility: hidden
+}
